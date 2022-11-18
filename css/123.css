@@ -1,0 +1,57 @@
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.sky {
+    background: #223;
+    height: 100vh;
+}
+.sky > div {
+    position: fixed;
+}
+.moon {
+    left: 10%;
+    top: 8%;
+}
+.clouds {
+    top: 20%;
+    left: 11%;
+}
+.cloud {
+    position: absolute;
+    width: 240px;
+}
+.cloud:nth-child(1) {
+    top: 0;
+    left: 150px;
+}
+.cloud:nth-child(2) {
+    top: 60px;
+    left: 0;
+}
+.ground {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.dog {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 500px;
+}
+
+@media (max-width: 700px) {
+    .moon {
+        top: 12%;
+    }
+    .clouds {
+        transform: scale(.8);
+        top: 33%;
+        left: 6%;
+    }
+    .dog {
+        width: 240px;
+    }
+}
